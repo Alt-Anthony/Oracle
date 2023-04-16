@@ -7,17 +7,29 @@
 
 <script>
 
+    function saltarLinea(){
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje);
+    }
     var anho = 2020;
+    var saltoLinea = "<br>"
+    
 
-    alert("La edad de Chrisitan es...")
-    document.write((anho-1995)+" años")
-
+    imprimir("La edad de Crishtian es...")
+    saltarLinea();
+    document.write("La edad de Chrisitan es...")
+    saltarLinea();
+    imprimir((anho-1995)+"años")
+    saltarLinea();
     var edadJulia = 22;
     var edadPaola = 20;
     var edadMiguel = 15;
     var nombre1="Julia";
     var nombre2="Paola";
     var nombre3="Miguel";
-    
-    document.write("<br>El promedio de las edades de : "+nombre1+","+nombre2+","+nombre3+"es"+Math.round((edadJulia+edadMiguel+edadPaola)/3));
+    saltarLinea();
+    imprimir("El promedio de las edades de : "+nombre1+","+nombre2+","+nombre3+"es"+Math.round((edadJulia+edadMiguel+edadPaola)/3))
 </script>
