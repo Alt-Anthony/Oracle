@@ -14,22 +14,23 @@
     function imprimir(mensaje){
         document.write(mensaje);
     }
-    var anho = 2020;
-    var saltoLinea = "<br>"
-    
 
-    imprimir("La edad de Crishtian es...")
-    saltarLinea();
-    document.write("La edad de Chrisitan es...")
-    saltarLinea();
-    imprimir((anho-1995)+"años")
-    saltarLinea();
-    var edadJulia = 22;
-    var edadPaola = 20;
-    var edadMiguel = 15;
-    var nombre1="Julia";
-    var nombre2="Paola";
-    var nombre3="Miguel";
-    saltarLinea();
-    imprimir("El promedio de las edades de : "+nombre1+","+nombre2+","+nombre3+"es"+Math.round((edadJulia+edadMiguel+edadPaola)/3))
+    function imcPersonas(peso1, altura1,peso2,altura2){
+        imc = peso1/(altura1*altura1)
+        imc2 = peso2/(altura2*altura2);
+        return (imc+imc2)/2;
+    }
+
+    function calcularIMC(peso,altura){
+        return peso/(altura*altura)
+    }
+    nombre = prompt("Escriba su nombre")
+    peso = prompt(nombre+" Informe su peso")
+    altura = prompt(nombre+" Informe su altura")
+    
+    imcCalculado = calcularIMC(peso,altura);
+    imprimir("El imc de "+nombre+" es "+imcCalculado);
+
+
 </script>
+
