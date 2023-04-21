@@ -1,1 +1,2 @@
-# Oracle
+# Oracle 
+# first steps done
