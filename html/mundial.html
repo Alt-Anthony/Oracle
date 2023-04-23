@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<h1>Programa</h1>
+<br>
+
+
+
+<script>
+
+    function saltarLinea(){
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje);
+    }
+
+    var anhoMundial = 1930;
+    var limite = parseInt(prompt("Ingrese el año limite"));
+
+    while(anhoMundial<= limite){
+        imprimir("hubo mundial en "+anhoMundial)
+        saltarLinea()
+        anhoMundial = anhoMundial +4;
+    }
+    imprimir("fin");
+</script>
