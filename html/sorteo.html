@@ -1,0 +1,38 @@
+<meta charset="UTF-8" />
+
+<h1>Programa de sorteo</h1>
+<br />
+
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+  }
+
+  function imprimir(mensaje) {
+    document.write(mensaje);
+  }
+
+  function sorteo(numero) {
+    numeroSorteo = Math.round(Math.random() * numero);
+    return numeroSorteo;
+  }
+
+  var contador = 0;
+
+  var n = parseInt(prompt("Ingrese el numero limite"));
+  n = sorteo(n);
+  while (contador == 0) {
+    var numeroPensado = parseInt(prompt("Ingrese el numero"));
+    if (numeroPensado < n) {
+      imprimir("el numero es mayor");
+      imprimir(n);
+    } else if (numeroPensado > n) {
+      imprimir("el numero es menor");
+      imprimir(n);
+    } else if (numeroPensado == n) {
+      imprimir("usted acerto");
+      imprimir(n);
+      contador++;
+    }
+  }
+</script>
